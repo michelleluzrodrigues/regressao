@@ -18,6 +18,8 @@ y_gravity = data_4000v['gravidade']
 # Dividir dataset em treino e validação
 X_train, X_val, y_train, y_val = train_test_split(X_vitals, y_gravity, test_size=0.2, random_state=42)
 
+
+
 # Treinar modelo de regressão (Decision Tree)
 tree_regressor = DecisionTreeRegressor(random_state=42)
 tree_regressor.fit(X_train, y_train)
